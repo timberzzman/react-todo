@@ -3,11 +3,8 @@ export default function getAll() {
 }
 
 export function getList(id) {
-  console.log(id);
-}
-
-export function setList(id, newValue) {
-  console.log(id, newValue);
+  const lists = getAll();
+  return lists.find((list) => list.id === id);
 }
 
 export function createList(newList) {
