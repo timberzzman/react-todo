@@ -7,7 +7,9 @@ function Home() {
 
   useEffect(() => {
     const listsFromStorage = getAll();
-    setTodosLists(listsFromStorage);
+    if (listsFromStorage) {
+      setTodosLists(listsFromStorage);
+    }
   }, []);
 
   return (
