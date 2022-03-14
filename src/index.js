@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
 import Home from './views/Home';
 import EditTodo from './views/EditTodo';
-import AddTodo from './views/AddTodo';
+import AddTodoView from './views/AddTodoView';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +14,7 @@ ReactDOM.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/add/" element={<AddTodo />} />
+        <Route path="/add/" element={<AddTodoView />} />
         <Route path="/edit/:todoId" element={<EditTodo />} />
         <Route
           path="*"

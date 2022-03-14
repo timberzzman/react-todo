@@ -14,7 +14,7 @@ function Navbar() {
           Home
         </NavLink>
       </div>
-      <div>
+      <div className="px-3">
         <p>Dark mode</p>
       </div>
     </nav>
